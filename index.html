@@ -16,8 +16,8 @@
     <!-- navbar -->
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-2">
-          <div class="left_menu">
+        <div id="left_col" class="col-md-2">
+          <div class="left_menu active">
             <div class="nav-header MuiBox-root css-183ajdv">
               <a
                 href="/demo/materialize-mui-react-nextjs-admin-template/demo-5/"
@@ -105,6 +105,7 @@
                 class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1j42o5e"
                 tabindex="0"
                 type="button"
+                onclick="leftMenuToggle()"
               >
                 <svg
                   class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06"
@@ -676,365 +677,363 @@
             </div>
           </div>
         </div>
-        <div class="col-md-10">
+        <div id="right_full" class="col-md-10">
           <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
+            <div class="container end_basis">
               <!-- <a class="navbar-brand" href="#"> -->
-                <div class="layout-horizontal-nav MuiBox-root css-8atqhb">
-                  <div
-                    class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular horizontal-nav-content-container container css-nr7phf"
-                  >
-                    <div class="menu-content MuiBox-root css-1f8uh8r">
-                      <div>
-                        <div class="MuiList-root MuiList-padding css-3cvfig">
-                          <li
-                            class="MuiListItem-root MuiListItem-gutters MuiListItem-padding menu-group css-1039ghg"
-                            aria-haspopup="true"
-                          >
-                            <div class="MuiBox-root css-vrx7gm">
-                              <div class="MuiBox-root css-1xlfmol">
-                                <div class="MuiListItemIcon-root css-1a5jvcj">
-                                  <svg
-                                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
-                                    focusable="false"
-                                    aria-hidden="true"
-                                    viewBox="0 0 24 24"
-                                    data-testid="HomeOutlineIcon"
-                                  >
-                                    <path
-                                      d="M12 5.69L17 10.19V18H15V12H9V18H7V10.19L12 5.69M12 3L2 12H5V20H11V14H13V20H19V12H22"
-                                    ></path>
-                                  </svg>
-                                </div>
-                                <p
-                                  class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1wjc5gi"
-                                >
-                                  Dashboards
-                                </p>
-                              </div>
-                              <div class="MuiBox-root css-70kf2r">
+              <i onclick="leftMenuToggle()" class="fa fa-bars"></i>
+              <div
+                class="layout-horizontal-nav menu_toggle MuiBox-root css-8atqhb"
+              >
+                <div
+                  class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular horizontal-nav-content-container container css-nr7phf"
+                >
+                  <div class="menu-content MuiBox-root css-1f8uh8r">
+                    <div>
+                      <div class="MuiList-root MuiList-padding css-3cvfig">
+                        <li
+                          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding menu-group css-1039ghg"
+                          aria-haspopup="true"
+                        >
+                          <div class="MuiBox-root css-vrx7gm">
+                            <div class="MuiBox-root css-1xlfmol">
+                              <div class="MuiListItemIcon-root css-1a5jvcj">
                                 <svg
-                                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-gsygar"
+                                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
                                   focusable="false"
                                   aria-hidden="true"
                                   viewBox="0 0 24 24"
-                                  data-testid="ChevronDownIcon"
+                                  data-testid="HomeOutlineIcon"
                                 >
                                   <path
-                                    d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                                    d="M12 5.69L17 10.19V18H15V12H9V18H7V10.19L12 5.69M12 3L2 12H5V20H11V14H13V20H19V12H22"
                                   ></path>
                                 </svg>
                               </div>
-                            </div>
-                          </li>
-                          <div
-                            class="MuiBox-root css-167xsrr"
-                            style="
-                              opacity: 0;
-                              visibility: hidden;
-                              position: absolute;
-                              inset: 0px auto auto 0px;
-                              transform: translate3d(0px, 48.8px, 0px);
-                            "
-                            data-popper-reference-hidden="false"
-                            data-popper-escaped="false"
-                            data-popper-placement="bottom-start"
-                          >
-                            <div
-                              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1drhuic"
-                            >
-                              <a
-                                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1tcqdsk"
-                                href="/demo/materialize-mui-react-nextjs-admin-template/demo-5/dashboards/crm/"
-                                ><div class="MuiBox-root css-12d2mry">
-                                  <div class="MuiBox-root css-1mervjy">
-                                    <div class="MuiListItemIcon-root css-orltun">
-                                      <svg
-                                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
-                                        focusable="false"
-                                        aria-hidden="true"
-                                        viewBox="0 0 24 24"
-                                        data-testid="ChartDonutIcon"
-                                      >
-                                        <path
-                                          d="M13,2.05V5.08C16.39,5.57 19,8.47 19,12C19,12.9 18.82,13.75 18.5,14.54L21.12,16.07C21.68,14.83 22,13.45 22,12C22,6.82 18.05,2.55 13,2.05M12,19A7,7 0 0,1 5,12C5,8.47 7.61,5.57 11,5.08V2.05C5.94,2.55 2,6.81 2,12A10,10 0 0,0 12,22C15.3,22 18.23,20.39 20.05,17.91L17.45,16.38C16.17,18 14.21,19 12,19Z"
-                                        ></path>
-                                      </svg>
-                                    </div>
-                                    <p
-                                      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1wjc5gi"
-                                    >
-                                      CRM
-                                    </p>
-                                  </div>
-                                </div></a
-                              ><a
-                                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1tcqdsk"
-                                href="/demo/materialize-mui-react-nextjs-admin-template/demo-5/dashboards/analytics/"
-                                ><div class="MuiBox-root css-12d2mry">
-                                  <div class="MuiBox-root css-1mervjy">
-                                    <div class="MuiListItemIcon-root css-orltun">
-                                      <svg
-                                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
-                                        focusable="false"
-                                        aria-hidden="true"
-                                        viewBox="0 0 24 24"
-                                        data-testid="ChartTimelineVariantIcon"
-                                      >
-                                        <path
-                                          d="M3,14L3.5,14.07L8.07,9.5C7.89,8.85 8.06,8.11 8.59,7.59C9.37,6.8 10.63,6.8 11.41,7.59C11.94,8.11 12.11,8.85 11.93,9.5L14.5,12.07L15,12C15.18,12 15.35,12 15.5,12.07L19.07,8.5C19,8.35 19,8.18 19,8A2,2 0 0,1 21,6A2,2 0 0,1 23,8A2,2 0 0,1 21,10C20.82,10 20.65,10 20.5,9.93L16.93,13.5C17,13.65 17,13.82 17,14A2,2 0 0,1 15,16A2,2 0 0,1 13,14L13.07,13.5L10.5,10.93C10.18,11 9.82,11 9.5,10.93L4.93,15.5L5,16A2,2 0 0,1 3,18A2,2 0 0,1 1,16A2,2 0 0,1 3,14Z"
-                                        ></path>
-                                      </svg>
-                                    </div>
-                                    <p
-                                      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1wjc5gi"
-                                    >
-                                      Analytics
-                                    </p>
-                                  </div>
-                                </div></a
-                              ><a
-                                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1tcqdsk"
-                                href="/demo/materialize-mui-react-nextjs-admin-template/demo-5/dashboards/ecommerce/"
-                                ><div class="MuiBox-root css-12d2mry">
-                                  <div class="MuiBox-root css-1mervjy">
-                                    <div class="MuiListItemIcon-root css-orltun">
-                                      <svg
-                                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
-                                        focusable="false"
-                                        aria-hidden="true"
-                                        viewBox="0 0 24 24"
-                                        data-testid="CartOutlineIcon"
-                                      >
-                                        <path
-                                          d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z"
-                                        ></path>
-                                      </svg>
-                                    </div>
-                                    <p
-                                      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1wjc5gi"
-                                    >
-                                      eCommerce
-                                    </p>
-                                  </div>
-                                </div></a
+                              <p
+                                class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1wjc5gi"
                               >
+                                Dashboards
+                              </p>
+                            </div>
+                            <div class="MuiBox-root css-70kf2r">
+                              <svg
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-gsygar"
+                                focusable="false"
+                                aria-hidden="true"
+                                viewBox="0 0 24 24"
+                                data-testid="ChevronDownIcon"
+                              >
+                                <path
+                                  d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                                ></path>
+                              </svg>
                             </div>
                           </div>
-                        </div>
-                      </div>
-                      
-                      <div>
-                        <div class="MuiList-root MuiList-padding css-3cvfig">
-                          <li
-                            class="MuiListItem-root MuiListItem-gutters MuiListItem-padding menu-group css-1039ghg"
-                            aria-haspopup="true"
-                          >
-                            <div class="MuiBox-root css-vrx7gm">
-                              <div class="MuiBox-root css-1xlfmol">
-                                <div class="MuiListItemIcon-root css-1a5jvcj">
-                                  <svg
-                                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
-                                    focusable="false"
-                                    aria-hidden="true"
-                                    viewBox="0 0 24 24"
-                                    data-testid="FileOutlineIcon"
-                                  >
-                                    <path
-                                      d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"
-                                    ></path>
-                                  </svg>
-                                </div>
-                                <p
-                                  class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1wjc5gi"
-                                >
-                                  Pages
-                                </p>
-                              </div>
-                            </div>
-                          </li>
-                          
-                        </div>
-                      </div>
-                      <div>
-                        <div class="MuiList-root MuiList-padding css-3cvfig">
-                          <li
-                            class="MuiListItem-root MuiListItem-gutters MuiListItem-padding menu-group css-1039ghg"
-                            aria-haspopup="true"
-                          >
-                            <div class="MuiBox-root css-vrx7gm">
-                              <div class="MuiBox-root css-1xlfmol">
-                                <div class="MuiListItemIcon-root css-1a5jvcj">
-                                  <svg
-                                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
-                                    focusable="false"
-                                    aria-hidden="true"
-                                    viewBox="0 0 24 24"
-                                    data-testid="CheckboxMarkedOutlineIcon"
-                                  >
-                                    <path
-                                      d="M19,19H5V5H15V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V11H19M7.91,10.08L6.5,11.5L11,16L21,6L19.59,4.58L11,13.17L7.91,10.08Z"
-                                    ></path>
-                                  </svg>
-                                </div>
-                                <p
-                                  class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1wjc5gi"
-                                >
-                                  Forms &amp; Tables
-                                </p>
-                              </div>
-                              
-                            </div>
-                          </li>
-                          
-                        </div>
-                      </div>
-                      <div>
-                        <div class="MuiList-root MuiList-padding css-3cvfig">
-                          <li
-                            class="MuiListItem-root MuiListItem-gutters MuiListItem-padding menu-group css-1039ghg"
-                            aria-haspopup="true"
-                          >
-                            <div class="MuiBox-root css-vrx7gm">
-                              <div class="MuiBox-root css-1xlfmol">
-                                <div class="MuiListItemIcon-root css-1a5jvcj">
-                                  <svg
-                                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
-                                    focusable="false"
-                                    aria-hidden="true"
-                                    viewBox="0 0 24 24"
-                                    data-testid="ChartDonutIcon"
-                                  >
-                                    <path
-                                      d="M13,2.05V5.08C16.39,5.57 19,8.47 19,12C19,12.9 18.82,13.75 18.5,14.54L21.12,16.07C21.68,14.83 22,13.45 22,12C22,6.82 18.05,2.55 13,2.05M12,19A7,7 0 0,1 5,12C5,8.47 7.61,5.57 11,5.08V2.05C5.94,2.55 2,6.81 2,12A10,10 0 0,0 12,22C15.3,22 18.23,20.39 20.05,17.91L17.45,16.38C16.17,18 14.21,19 12,19Z"
-                                    ></path>
-                                  </svg>
-                                </div>
-                                <p
-                                  class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1wjc5gi"
-                                >
-                                  Charts
-                                </p>
-                              </div>
-                              <div class="MuiBox-root css-70kf2r">
-                                <svg
-                                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-gsygar"
-                                  focusable="false"
-                                  aria-hidden="true"
-                                  viewBox="0 0 24 24"
-                                  data-testid="ChevronDownIcon"
-                                >
-                                  <path
-                                    d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
-                                  ></path>
-                                </svg>
-                              </div>
-                            </div>
-                          </li>
+                        </li>
+                        <div
+                          class="MuiBox-root css-167xsrr"
+                          style="
+                            opacity: 0;
+                            visibility: hidden;
+                            position: absolute;
+                            inset: 0px auto auto 0px;
+                            transform: translate3d(0px, 48.8px, 0px);
+                          "
+                          data-popper-reference-hidden="false"
+                          data-popper-escaped="false"
+                          data-popper-placement="bottom-start"
+                        >
                           <div
-                            class="MuiBox-root css-167xsrr"
-                            style="
-                              opacity: 0;
-                              position: absolute;
-                              inset: 0px auto auto 0px;
-                              transform: translate3d(0px, 48.8px, 0px);
-                              transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1)
-                                0ms;
-                              visibility: hidden;
-                            "
-                            data-popper-reference-hidden="false"
-                            data-popper-escaped="false"
-                            data-popper-placement="bottom-start"
+                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1drhuic"
                           >
-                            <div
-                              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1drhuic"
+                            <a
+                              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1tcqdsk"
+                              href="/demo/materialize-mui-react-nextjs-admin-template/demo-5/dashboards/crm/"
+                              ><div class="MuiBox-root css-12d2mry">
+                                <div class="MuiBox-root css-1mervjy">
+                                  <div class="MuiListItemIcon-root css-orltun">
+                                    <svg
+                                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                      focusable="false"
+                                      aria-hidden="true"
+                                      viewBox="0 0 24 24"
+                                      data-testid="ChartDonutIcon"
+                                    >
+                                      <path
+                                        d="M13,2.05V5.08C16.39,5.57 19,8.47 19,12C19,12.9 18.82,13.75 18.5,14.54L21.12,16.07C21.68,14.83 22,13.45 22,12C22,6.82 18.05,2.55 13,2.05M12,19A7,7 0 0,1 5,12C5,8.47 7.61,5.57 11,5.08V2.05C5.94,2.55 2,6.81 2,12A10,10 0 0,0 12,22C15.3,22 18.23,20.39 20.05,17.91L17.45,16.38C16.17,18 14.21,19 12,19Z"
+                                      ></path>
+                                    </svg>
+                                  </div>
+                                  <p
+                                    class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1wjc5gi"
+                                  >
+                                    CRM
+                                  </p>
+                                </div>
+                              </div></a
+                            ><a
+                              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1tcqdsk"
+                              href="/demo/materialize-mui-react-nextjs-admin-template/demo-5/dashboards/analytics/"
+                              ><div class="MuiBox-root css-12d2mry">
+                                <div class="MuiBox-root css-1mervjy">
+                                  <div class="MuiListItemIcon-root css-orltun">
+                                    <svg
+                                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                      focusable="false"
+                                      aria-hidden="true"
+                                      viewBox="0 0 24 24"
+                                      data-testid="ChartTimelineVariantIcon"
+                                    >
+                                      <path
+                                        d="M3,14L3.5,14.07L8.07,9.5C7.89,8.85 8.06,8.11 8.59,7.59C9.37,6.8 10.63,6.8 11.41,7.59C11.94,8.11 12.11,8.85 11.93,9.5L14.5,12.07L15,12C15.18,12 15.35,12 15.5,12.07L19.07,8.5C19,8.35 19,8.18 19,8A2,2 0 0,1 21,6A2,2 0 0,1 23,8A2,2 0 0,1 21,10C20.82,10 20.65,10 20.5,9.93L16.93,13.5C17,13.65 17,13.82 17,14A2,2 0 0,1 15,16A2,2 0 0,1 13,14L13.07,13.5L10.5,10.93C10.18,11 9.82,11 9.5,10.93L4.93,15.5L5,16A2,2 0 0,1 3,18A2,2 0 0,1 1,16A2,2 0 0,1 3,14Z"
+                                      ></path>
+                                    </svg>
+                                  </div>
+                                  <p
+                                    class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1wjc5gi"
+                                  >
+                                    Analytics
+                                  </p>
+                                </div>
+                              </div></a
+                            ><a
+                              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1tcqdsk"
+                              href="/demo/materialize-mui-react-nextjs-admin-template/demo-5/dashboards/ecommerce/"
+                              ><div class="MuiBox-root css-12d2mry">
+                                <div class="MuiBox-root css-1mervjy">
+                                  <div class="MuiListItemIcon-root css-orltun">
+                                    <svg
+                                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                      focusable="false"
+                                      aria-hidden="true"
+                                      viewBox="0 0 24 24"
+                                      data-testid="CartOutlineIcon"
+                                    >
+                                      <path
+                                        d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z"
+                                      ></path>
+                                    </svg>
+                                  </div>
+                                  <p
+                                    class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1wjc5gi"
+                                  >
+                                    eCommerce
+                                  </p>
+                                </div>
+                              </div></a
                             >
-                              <a
-                                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1tcqdsk"
-                                href="/demo/materialize-mui-react-nextjs-admin-template/demo-5/charts/apex-charts/"
-                                ><div class="MuiBox-root css-12d2mry">
-                                  <div class="MuiBox-root css-1mervjy">
-                                    <div class="MuiListItemIcon-root css-orltun">
-                                      <svg
-                                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
-                                        focusable="false"
-                                        aria-hidden="true"
-                                        viewBox="0 0 24 24"
-                                        data-testid="ChartLineIcon"
-                                      >
-                                        <path
-                                          d="M16,11.78L20.24,4.45L21.97,5.45L16.74,14.5L10.23,10.75L5.46,19H22V21H2V3H4V17.54L9.5,8L16,11.78Z"
-                                        ></path>
-                                      </svg>
-                                    </div>
-                                    <p
-                                      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1wjc5gi"
-                                    >
-                                      Apex
-                                    </p>
-                                  </div>
-                                </div></a
-                              ><a
-                                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1tcqdsk"
-                                href="/demo/materialize-mui-react-nextjs-admin-template/demo-5/charts/recharts/"
-                                ><div class="MuiBox-root css-12d2mry">
-                                  <div class="MuiBox-root css-1mervjy">
-                                    <div class="MuiListItemIcon-root css-orltun">
-                                      <svg
-                                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
-                                        focusable="false"
-                                        aria-hidden="true"
-                                        viewBox="0 0 24 24"
-                                        data-testid="ChartBellCurveIcon"
-                                      >
-                                        <path
-                                          d="M9.96,11.31C10.82,8.1 11.5,6 13,6C14.5,6 15.18,8.1 16.04,11.31C17,14.92 18.1,19 22,19V17C19.8,17 19,14.54 17.97,10.8C17.08,7.46 16.15,4 13,4C9.85,4 8.92,7.46 8.03,10.8C7.03,14.54 6.2,17 4,17V2H2V22H22V20H4V19C7.9,19 9,14.92 9.96,11.31Z"
-                                        ></path>
-                                      </svg>
-                                    </div>
-                                    <p
-                                      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1wjc5gi"
-                                    >
-                                      Recharts
-                                    </p>
-                                  </div>
-                                </div></a
-                              ><a
-                                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1tcqdsk"
-                                href="/demo/materialize-mui-react-nextjs-admin-template/demo-5/charts/chartjs/"
-                                ><div class="MuiBox-root css-12d2mry">
-                                  <div class="MuiBox-root css-1mervjy">
-                                    <div class="MuiListItemIcon-root css-orltun">
-                                      <svg
-                                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
-                                        focusable="false"
-                                        aria-hidden="true"
-                                        viewBox="0 0 24 24"
-                                        data-testid="ChartBellCurveCumulativeIcon"
-                                      >
-                                        <path
-                                          d="M4 19V20H22V22H2V2H4V17C7 17 10 15 12.1 11.4C15.1 6.4 18.4 4 22 4V6C19.2 6 16.5 8.1 13.9 12.5C11.3 16.6 7.7 19 4 19Z"
-                                        ></path>
-                                      </svg>
-                                    </div>
-                                    <p
-                                      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1wjc5gi"
-                                    >
-                                      ChartJS
-                                    </p>
-                                  </div>
-                                </div></a
-                              >
-                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div>
-                        
                       </div>
                     </div>
+
+                    <div>
+                      <div class="MuiList-root MuiList-padding css-3cvfig">
+                        <li
+                          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding menu-group css-1039ghg"
+                          aria-haspopup="true"
+                        >
+                          <div class="MuiBox-root css-vrx7gm">
+                            <div class="MuiBox-root css-1xlfmol">
+                              <div class="MuiListItemIcon-root css-1a5jvcj">
+                                <svg
+                                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                  focusable="false"
+                                  aria-hidden="true"
+                                  viewBox="0 0 24 24"
+                                  data-testid="FileOutlineIcon"
+                                >
+                                  <path
+                                    d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"
+                                  ></path>
+                                </svg>
+                              </div>
+                              <p
+                                class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1wjc5gi"
+                              >
+                                Pages
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="MuiList-root MuiList-padding css-3cvfig">
+                        <li
+                          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding menu-group css-1039ghg"
+                          aria-haspopup="true"
+                        >
+                          <div class="MuiBox-root css-vrx7gm">
+                            <div class="MuiBox-root css-1xlfmol">
+                              <div class="MuiListItemIcon-root css-1a5jvcj">
+                                <svg
+                                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                  focusable="false"
+                                  aria-hidden="true"
+                                  viewBox="0 0 24 24"
+                                  data-testid="CheckboxMarkedOutlineIcon"
+                                >
+                                  <path
+                                    d="M19,19H5V5H15V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V11H19M7.91,10.08L6.5,11.5L11,16L21,6L19.59,4.58L11,13.17L7.91,10.08Z"
+                                  ></path>
+                                </svg>
+                              </div>
+                              <p
+                                class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1wjc5gi"
+                              >
+                                Forms &amp; Tables
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="MuiList-root MuiList-padding css-3cvfig">
+                        <li
+                          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding menu-group css-1039ghg"
+                          aria-haspopup="true"
+                        >
+                          <div class="MuiBox-root css-vrx7gm">
+                            <div class="MuiBox-root css-1xlfmol">
+                              <div class="MuiListItemIcon-root css-1a5jvcj">
+                                <svg
+                                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                  focusable="false"
+                                  aria-hidden="true"
+                                  viewBox="0 0 24 24"
+                                  data-testid="ChartDonutIcon"
+                                >
+                                  <path
+                                    d="M13,2.05V5.08C16.39,5.57 19,8.47 19,12C19,12.9 18.82,13.75 18.5,14.54L21.12,16.07C21.68,14.83 22,13.45 22,12C22,6.82 18.05,2.55 13,2.05M12,19A7,7 0 0,1 5,12C5,8.47 7.61,5.57 11,5.08V2.05C5.94,2.55 2,6.81 2,12A10,10 0 0,0 12,22C15.3,22 18.23,20.39 20.05,17.91L17.45,16.38C16.17,18 14.21,19 12,19Z"
+                                  ></path>
+                                </svg>
+                              </div>
+                              <p
+                                class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1wjc5gi"
+                              >
+                                Charts
+                              </p>
+                            </div>
+                            <div class="MuiBox-root css-70kf2r">
+                              <svg
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-gsygar"
+                                focusable="false"
+                                aria-hidden="true"
+                                viewBox="0 0 24 24"
+                                data-testid="ChevronDownIcon"
+                              >
+                                <path
+                                  d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                                ></path>
+                              </svg>
+                            </div>
+                          </div>
+                        </li>
+                        <div
+                          class="MuiBox-root css-167xsrr"
+                          style="
+                            opacity: 0;
+                            position: absolute;
+                            inset: 0px auto auto 0px;
+                            transform: translate3d(0px, 48.8px, 0px);
+                            transition: opacity 300ms
+                              cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                            visibility: hidden;
+                          "
+                          data-popper-reference-hidden="false"
+                          data-popper-escaped="false"
+                          data-popper-placement="bottom-start"
+                        >
+                          <div
+                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1drhuic"
+                          >
+                            <a
+                              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1tcqdsk"
+                              href="/demo/materialize-mui-react-nextjs-admin-template/demo-5/charts/apex-charts/"
+                              ><div class="MuiBox-root css-12d2mry">
+                                <div class="MuiBox-root css-1mervjy">
+                                  <div class="MuiListItemIcon-root css-orltun">
+                                    <svg
+                                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                      focusable="false"
+                                      aria-hidden="true"
+                                      viewBox="0 0 24 24"
+                                      data-testid="ChartLineIcon"
+                                    >
+                                      <path
+                                        d="M16,11.78L20.24,4.45L21.97,5.45L16.74,14.5L10.23,10.75L5.46,19H22V21H2V3H4V17.54L9.5,8L16,11.78Z"
+                                      ></path>
+                                    </svg>
+                                  </div>
+                                  <p
+                                    class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1wjc5gi"
+                                  >
+                                    Apex
+                                  </p>
+                                </div>
+                              </div></a
+                            ><a
+                              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1tcqdsk"
+                              href="/demo/materialize-mui-react-nextjs-admin-template/demo-5/charts/recharts/"
+                              ><div class="MuiBox-root css-12d2mry">
+                                <div class="MuiBox-root css-1mervjy">
+                                  <div class="MuiListItemIcon-root css-orltun">
+                                    <svg
+                                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                      focusable="false"
+                                      aria-hidden="true"
+                                      viewBox="0 0 24 24"
+                                      data-testid="ChartBellCurveIcon"
+                                    >
+                                      <path
+                                        d="M9.96,11.31C10.82,8.1 11.5,6 13,6C14.5,6 15.18,8.1 16.04,11.31C17,14.92 18.1,19 22,19V17C19.8,17 19,14.54 17.97,10.8C17.08,7.46 16.15,4 13,4C9.85,4 8.92,7.46 8.03,10.8C7.03,14.54 6.2,17 4,17V2H2V22H22V20H4V19C7.9,19 9,14.92 9.96,11.31Z"
+                                      ></path>
+                                    </svg>
+                                  </div>
+                                  <p
+                                    class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1wjc5gi"
+                                  >
+                                    Recharts
+                                  </p>
+                                </div>
+                              </div></a
+                            ><a
+                              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1tcqdsk"
+                              href="/demo/materialize-mui-react-nextjs-admin-template/demo-5/charts/chartjs/"
+                              ><div class="MuiBox-root css-12d2mry">
+                                <div class="MuiBox-root css-1mervjy">
+                                  <div class="MuiListItemIcon-root css-orltun">
+                                    <svg
+                                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                      focusable="false"
+                                      aria-hidden="true"
+                                      viewBox="0 0 24 24"
+                                      data-testid="ChartBellCurveCumulativeIcon"
+                                    >
+                                      <path
+                                        d="M4 19V20H22V22H2V2H4V17C7 17 10 15 12.1 11.4C15.1 6.4 18.4 4 22 4V6C19.2 6 16.5 8.1 13.9 12.5C11.3 16.6 7.7 19 4 19Z"
+                                      ></path>
+                                    </svg>
+                                  </div>
+                                  <p
+                                    class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1wjc5gi"
+                                  >
+                                    ChartJS
+                                  </p>
+                                </div>
+                              </div></a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div></div>
                   </div>
                 </div>
+              </div>
               <!-- </a> -->
               <div
                 class="d-flex align-items-center justify-content-end"
@@ -1042,23 +1041,7 @@
               >
                 <div class="MuiBox-root css-70qvj9">
                   <div class="MuiBox-root css-t5z4a2">
-                    <button
-                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-bb1fx0"
-                      tabindex="0"
-                      type="button"
-                    >
-                      <svg
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
-                        focusable="false"
-                        aria-hidden="true"
-                        viewBox="0 0 24 24"
-                        data-testid="MagnifyIcon"
-                      >
-                        <path
-                          d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"
-                        ></path></svg
-                      ><span class="MuiTouchRipple-root css-w0pj6f"></span>
-                    </button>
+                    <input type="checkbox" name="" id="">
                   </div>
 
                   <button
@@ -1097,12 +1080,248 @@
               </div>
             </div>
           </nav>
-          
+
+          <div class="mt-4">
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-15j76c0"
+            >
+              <div
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-13nd69s"
+              >
+                <div class="MuiCardHeader-root css-1lbhvlm">
+                  <div class="MuiCardHeader-content css-11qjisw">
+                    <span
+                      class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-12ymoos"
+                      >Search Filters</span
+                    >
+                  </div>
+                </div>
+                <div class="MuiCardContent-root css-12evlce">
+                  <div
+                    class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-6 css-h2qpui"
+                  >
+                    <div
+                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-4 css-h3o6is"
+                    >
+                      <div
+                        class="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye"
+                      >
+                        <label
+                          class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-1t0alks"
+                          data-shrink="false"
+                          id="role-select"
+                          >Select Role</label
+                        >
+                        <div
+                          class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl css-19x525l"
+                        >
+                          <div
+                            tabindex="0"
+                            role="button"
+                            aria-expanded="false"
+                            aria-haspopup="listbox"
+                            aria-labelledby="role-select select-role"
+                            id="select-role"
+                            class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-2aacz8"
+                          >
+                            <span class="notranslate">&ZeroWidthSpace;</span>
+                          </div>
+                          <input
+                            aria-hidden="true"
+                            tabindex="-1"
+                            class="MuiSelect-nativeInput css-1k3x8v3"
+                            placeholder="Select Role"
+                            value=""
+                          /><svg
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-dv6cwf"
+                            focusable="false"
+                            aria-hidden="true"
+                            viewBox="0 0 24 24"
+                            data-testid="ArrowDropDownIcon"
+                          >
+                            <path d="M7 10l5 5 5-5z"></path>
+                          </svg>
+                          <fieldset
+                            aria-hidden="true"
+                            class="MuiOutlinedInput-notchedOutline css-igs3ac"
+                          >
+                            <legend class="css-1ftyaf0">
+                              <span>Select Role</span>
+                            </legend>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-4 css-h3o6is"
+                    >
+                      <div
+                        class="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye"
+                      >
+                        <label
+                          class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-1t0alks"
+                          data-shrink="false"
+                          id="plan-select"
+                          >Select Plan</label
+                        >
+                        <div
+                          class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl css-19x525l"
+                        >
+                          <div
+                            tabindex="0"
+                            role="button"
+                            aria-expanded="false"
+                            aria-haspopup="listbox"
+                            aria-labelledby="plan-select select-plan"
+                            id="select-plan"
+                            class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-2aacz8"
+                          >
+                            <span class="notranslate">&ZeroWidthSpace;</span>
+                          </div>
+                          <input
+                            aria-hidden="true"
+                            tabindex="-1"
+                            class="MuiSelect-nativeInput css-1k3x8v3"
+                            placeholder="Select Plan"
+                            value=""
+                          /><svg
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-dv6cwf"
+                            focusable="false"
+                            aria-hidden="true"
+                            viewBox="0 0 24 24"
+                            data-testid="ArrowDropDownIcon"
+                          >
+                            <path d="M7 10l5 5 5-5z"></path>
+                          </svg>
+                          <fieldset
+                            aria-hidden="true"
+                            class="MuiOutlinedInput-notchedOutline css-igs3ac"
+                          >
+                            <legend class="css-1ftyaf0">
+                              <span>Select Plan</span>
+                            </legend>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-4 css-h3o6is"
+                    >
+                      <div
+                        class="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye"
+                      >
+                        <label
+                          class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-1t0alks"
+                          data-shrink="false"
+                          id="status-select"
+                          >Select Status</label
+                        >
+                        <div
+                          class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl css-19x525l"
+                        >
+                          <div
+                            tabindex="0"
+                            role="button"
+                            aria-expanded="false"
+                            aria-haspopup="listbox"
+                            aria-labelledby="status-select select-status"
+                            id="select-status"
+                            class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-2aacz8"
+                          >
+                            <span class="notranslate">&ZeroWidthSpace;</span>
+                          </div>
+                          <input
+                            aria-hidden="true"
+                            tabindex="-1"
+                            class="MuiSelect-nativeInput css-1k3x8v3"
+                            placeholder="Select Role"
+                            value=""
+                          /><svg
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-dv6cwf"
+                            focusable="false"
+                            aria-hidden="true"
+                            viewBox="0 0 24 24"
+                            data-testid="ArrowDropDownIcon"
+                          >
+                            <path d="M7 10l5 5 5-5z"></path>
+                          </svg>
+                          <fieldset
+                            aria-hidden="true"
+                            class="MuiOutlinedInput-notchedOutline css-igs3ac"
+                          >
+                            <legend class="css-1ftyaf0">
+                              <span>Select Status</span>
+                            </legend>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 mt-4 css-15j76c0"
+          >
+            <div
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-13nd69s"
+            >
+              <div class="MuiBox-root css-1ctkf99">
+                <button
+                  class="MuiButton-root MuiButton-outlined MuiButton-outlinedSecondary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root css-j5yqh7"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiButton-startIcon MuiButton-iconSizeMedium css-1l6c7y9"
+                    ><svg
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06"
+                      focusable="false"
+                      aria-hidden="true"
+                      viewBox="0 0 24 24"
+                      data-testid="ExportVariantIcon"
+                    >
+                      <path
+                        d="M12,1L8,5H11V14H13V5H16M18,23H6C4.89,23 4,22.1 4,21V9A2,2 0 0,1 6,7H9V9H6V21H18V9H15V7H18A2,2 0 0,1 20,9V21A2,2 0 0,1 18,23Z"
+                      ></path></svg></span
+                  >Export<span class="MuiTouchRipple-root css-w0pj6f"></span>
+                </button>
+                <div class="MuiBox-root css-xxdqwu">
+                  <div class="MuiFormControl-root MuiTextField-root css-olzsa8">
+                    <div
+                      class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-8wv062"
+                    >
+                      <input
+                        aria-invalid="false"
+                        id=":r4h:"
+                        placeholder="Search User"
+                        type="text"
+                        class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-1658vn9"
+                        value=""
+                      />
+                      
+                    </div>
+                  </div>
+                  <button
+                    class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root css-pp3aye"
+                    tabindex="0"
+                    type="button"
+                  >
+                    Add User<span class="MuiTouchRipple-root css-w0pj6f"></span>
+                  </button>
+                </div>
+              </div>
+
+
+          </div>
         </div>
       </div>
     </div>
 
     <!-- js -->
     <script src="./assets/bootstrap.bundle.min.js"></script>
+    <script src="./assets/app.js"></script>
   </body>
 </html>
