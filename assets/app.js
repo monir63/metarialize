@@ -11,5 +11,17 @@ function leftMenuToggle(){
 
 function toggleRightInput(){
     const rightMenu = document.querySelector('.rightSideInput');
+    const full_body_from_right = document.querySelector('.full_body_from_right');
+    full_body_from_right.classList.toggle('active');
     rightMenu.classList.toggle('active');
+}
+function menuItemToggle(item){
+    const menuItem = document.getElementById(item);
+    menuItem.classList.toggle('active');
+}
+function removeActiveFunction(){
+    menuItemToggle('fixedProfile')
+    menuItemToggle('notification')
+    toggleRightInput()
+    leftMenuToggle()
 }
