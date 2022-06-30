@@ -1267,10 +1267,49 @@ select {
     margin-bottom: 10px;
 }
 
-
-
-
-
+.rightSideInput{
+    background-color: rgb(255, 255, 255);
+    color: rgba(76, 78, 100, 0.87);
+    transition: .5s;
+    box-shadow: rgb(76 78 100 / 20%) 0px 8px 10px -5px, rgb(76 78 100 / 14%) 0px 16px 24px 2px, rgb(76 78 100 / 12%) 0px 6px 30px 5px;
+    background-image: none;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1 0 auto;
+    z-index: 1200;
+    position: fixed;
+    top: 0px;
+    outline: 0px;
+    right: -350px;
+    width: 300px;
+    padding: 10px;
+}
+.rightSideInput.active{
+    right: 0px;
+}
+.closeIcon{
+    font-size: 20px;
+    cursor: pointer;
+}
+.single_input{
+    margin-bottom: 20px;
+}
+.single_input label{
+    display: block;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+.single_input input{
+    width: 100%;
+    border: 1px solid;
+    border-color: rgba(76, 78, 100, 0.22);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+}
 
 
 

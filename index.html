@@ -13,6 +13,53 @@
     <link rel="stylesheet" href="./assets/bootstrap.min.css" />
   </head>
   <body>
+    <!-- fixed right side -->
+    <div class="rightSideInput">
+      <div class="d-flex align-items-center justify-content-between mb-3">
+        <i onclick="toggleRightInput()" class="fas fa-times closeIcon"></i>
+        <h3>Add User</h3>
+      </div>
+
+      <div class="single_input">
+        <label for="">Full Name</label>
+        <input placeholder="Full Name" type="text">
+      </div>
+
+      <div class="single_input">
+        <label for="">username</label>
+        <input placeholder="Username" type="text">
+      </div>
+
+      <div class="single_input">
+        <label for="">email</label>
+        <input placeholder="Email" type="email">
+      </div>
+
+      <div class="single_input">
+        <label for="">Company</label>
+        <input placeholder="Company" type="text">
+      </div>
+
+      <div class="single_input">
+        <label for="">Country</label>
+        <input placeholder="Country" type="text">
+      </div>
+
+      <div class="single_input">
+        <label for="">Contact</label>
+        <input placeholder="Contact" type="text">
+      </div>
+
+      <div class="single_input">
+        <select name="" id="">
+          <option value="">Select Role</option>
+          <option value="">Subscriber</option>
+          <option value="">Admin</option>
+          <option value="">User</option>
+        </select>
+      </div>
+
+    </div>
     <!-- navbar -->
     <div class="container-fluid">
       <div class="row">
@@ -1187,6 +1234,8 @@
                     class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root css-pp3aye"
                     tabindex="0"
                     type="button"
+                    onclick="toggleRightInput()"
+                    style="margin-bottom: 10px;"
                   >
                     Add User<span class="MuiTouchRipple-root css-w0pj6f"></span>
                   </button>

@@ -8,3 +8,8 @@ function leftMenuToggle(){
     leftMenu.classList.toggle('col-md-2')
     left_menu.classList.toggle('active');
 }
+
+function toggleRightInput(){
+    const rightMenu = document.querySelector('.rightSideInput');
+    rightMenu.classList.toggle('active');
+}
