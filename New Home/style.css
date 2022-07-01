@@ -12,11 +12,15 @@ body{
 a:hover{
     color:#7b8190;
 }
+.position-relative{
+    position: relative;
+}
 .left_menu{
     position:absolute;
-    top:55px;
+    /* top:55px; */
     left:0;
-    width:250px;
+    /* width:250px; */
+    width:100%;
     height:100%;
     background-color: #fff;
     /* padding:20px; */
@@ -355,6 +359,26 @@ table tbody td .action i:last-child:hover{
 }
 .img img:last-child{
     display: none;
+}
+.client_added{
+    background-color: #fff;
+    width:250px;
+    height:100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+}
+.added_header{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E6E6E6;
+}
+.added_header h4{
+    font-size:20px;
+    font-weight: 600;
 }
 @media (max-width: 1400px){
     .responsive #image img:first-child{
