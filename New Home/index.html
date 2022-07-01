@@ -16,11 +16,14 @@
     <div class="top_bar">
         <div class=" container-fluid d-flex align-items-center w-100 justify-content-between">
             <div class="left d-flex align-items-center">
-                <div class="img">
-                    <img src="https://rise.fairsketch.com/files/system/default-stie-logo.png" alt="">
+                <div class="responsive">
+                    <div id="image" class="img">
+                        <img src="https://rise.fairsketch.com/files/system/default-stie-logo.png" alt="">
+                        <img src="https://rise.fairsketch.com/assets/images/favicon.png" alt="">
+                    </div>
                 </div>
                 <ul class="icon d-flex align-items-center">
-                    <li><p><i  class="fa fa-bars"></i></p></li>
+                    <li onclick="leftMenuToggle()"><p><i  class="fa fa-bars"></i></p></li>
                     <li><p><i class="fa fa-calendar"></i> Event</p></li>
                     <li><p><i class="fa fa-file"></i> Pages</p>
                         <ul>
@@ -121,7 +124,7 @@
     <div class="container-fluid">
         
         <div class="row">
-            <div class="col-md-2">
+            <div id="leftMenu" class="col-md-2 active">
                 <div class="left_menu">
                     <ul>
                         <li><a href="index.html"> <i class="fa fa-desktop"></i>Home</a></li>
@@ -172,7 +175,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-10">
+            <div id="content" class="col-md-12">
                 <div class="table_data">
                     <div class="d-flex align-items-center justify-content-between mb-3">
                         <button><i class="fa fa-upload me-1"></i> Import Clients</button>

@@ -248,6 +248,7 @@ select.select{
     padding:5px 10px;
     border: none;
     outline: none;
+    border-radius: 5px;
 }
 select.select option{
     border-radius: 0;
@@ -339,4 +340,48 @@ table tbody td .action i:last-child:hover{
 }
 .pagination a:hover,.pagination a.active{
     background-color: #E6E6E6;
+}
+/* #leftMenu.active{
+    display: block;
+} */
+#leftMenu{
+    display: none;
+}
+.logo-sm img:first-child{
+    display: none;
+}
+.logo-sm img{
+    margin-right: 20px;
+}
+.img img:last-child{
+    display: none;
+}
+@media (max-width: 1400px){
+    .responsive #image img:first-child{
+        display: none;
+    }
+    .responsive #image img:last-child{
+        display: block;
+    }
+    #leftMenu{
+        display: none;
+    }
+    #leftMenu.active{
+        display: block;
+    }
+    div#content{
+        width: 100%;
+    }
+    .img{
+        width: auto;
+    }
+    .img img{
+        margin-right:20px
+    }
+}
+@media (min-width:1401px) {
+    #leftMenu.active{
+        display: block;
+    }
+    
 }
