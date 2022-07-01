@@ -23,108 +23,134 @@
             <label for="name">Full Name</label>
             <input type="text" placeholder="Full Name">
         </div>
+        <div class="single_input">
+            <label for="name">Username</label>
+            <input type="text" placeholder="Username">
+        </div>
+        <div class="single_input">
+            <label for="name">Email</label>
+            <input type="text" placeholder="Email">
+        </div>
+        <div class="single_input">
+            <label for="name">Company</label>
+            <input type="text" placeholder="Company">
+        </div>
+        <div class="single_input">
+            <label for="name">Country</label>
+            <input type="text" placeholder="Country">
+        </div>
+        <div class="single_input">
+            <label for="name">Contact</label>
+            <input type="text" placeholder="Contact">
+        </div>
     </div>
     <div class="top_bar">
-        <div class=" container-fluid d-flex align-items-center w-100 justify-content-between">
-            <div class="left d-flex align-items-center">
-                <div class="responsive">
-                    <div id="image" class="img">
-                        <img src="https://rise.fairsketch.com/files/system/default-stie-logo.png" alt="">
-                        <img src="https://rise.fairsketch.com/assets/images/favicon.png" alt="">
-                    </div>
-                </div>
-                <ul class="icon d-flex align-items-center">
-                    <li onclick="leftMenuToggle()"><p><i  class="fa fa-bars"></i></p></li>
-                    <li><p><i class="fa fa-calendar"></i> Event</p></li>
-                    <li><p><i class="fa fa-file"></i> Pages</p>
-                        <ul>
-                            <li><a href="#">Sub Pages</a></li>
-                            <li><a href="#">Sub Pages</a></li>
-                            <li><a href="#">Sub Pages</a></li>
-                            <li><a href="#">Sub Pages</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="right">
-                <div class="d-flex align-items-center">
-                    <div class="icon">
-                        <i class="fas fa-bell"></i>
-                        <div class="info_item notify">
-                            <div class="notification_header">
-                                <p>Notification</p>
-                            <p>3</p>
-                            </div>
-                            <div class="notification_body">
-                                <ul>
-                                    <li>
-                                        <div class="d-flex align-items-center">
-                                            <div class="image">
-                                                <img src="https://pixinvent.com/demo/materialize-mui-react-nextjs-admin-template/demo-5/images/avatars/4.png" alt="">
-                                            </div>
-                                            <div class="notification_text">
-                                                <h6>Congratulation Flora! 🎉</h6>
-                                                <p>Won the monthly best seller badge</p>
-                                            </div>
-                                        </div>
-                                        <div class="notification_time">
-                                            <p>Today</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="d-flex align-items-center">
-                                            <div class="image">
-                                                <img src="https://pixinvent.com/demo/materialize-mui-react-nextjs-admin-template/demo-5/images/avatars/4.png" alt="">
-                                            </div>
-                                            <div class="notification_text">
-                                                <h6>Congratulation Flora! 🎉</h6>
-                                                <p>Won the monthly best seller badge</p>
-                                            </div>
-                                        </div>
-                                        <div class="notification_time">
-                                            <p>Today</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="d-flex align-items-center">
-                                            <div class="image">
-                                                <img src="https://pixinvent.com/demo/materialize-mui-react-nextjs-admin-template/demo-5/images/avatars/4.png" alt="">
-                                            </div>
-                                            <div class="notification_text">
-                                                <h6>Congratulation Flora! 🎉</h6>
-                                                <p>Won the monthly best seller badge</p>
-                                            </div>
-                                        </div>
-                                        <div class="notification_time">
-                                            <p>Today</p>
-                                        </div>
-                                    </li>
-                                    
-                                </ul>
-                            </div>
+        <div class="container-fluid">
+            <div class="row">
+               <div class="col-2">
+                <div class="left d-flex align-items-center">
+                    <div class="responsive">
+                        <div id="image" class="img">
+                            <img src="https://rise.fairsketch.com/files/system/default-stie-logo.png" alt="">
+                            <img src="https://rise.fairsketch.com/assets/images/favicon.png" alt="">
                         </div>
                     </div>
-                    <div class="icon">
-                        <img src="https://rise.fairsketch.com/files/profile_images/_file62ad94f892365-avatar.png" alt="">
-                        <div class="info_item">
-                            <div class="profile">
-                                <img src="https://rise.fairsketch.com/files/profile_images/_file62ad94f892365-avatar.png" alt="">
-                                <div class="name">
-                                    <p>John Dev</p>
-                                    <p style="font-size: 10px;"><span>@johnDev</span></p>
+                    <ul class="icon d-flex align-items-center">
+                        <li onclick="leftMenuToggle()"><p><i  class="fa fa-bars"></i></p></li>
+                        <!-- <li><p><i class="fa fa-calendar"></i> Event</p></li>
+                        <li><p><i class="fa fa-file"></i> Pages</p>
+                            <ul>
+                                <li><a href="#">Sub Pages</a></li>
+                                <li><a href="#">Sub Pages</a></li>
+                                <li><a href="#">Sub Pages</a></li>
+                                <li><a href="#">Sub Pages</a></li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                </div>
+               </div>
+                <div class="col-10 d-flex justify-content-end">
+                    <div class="right">
+                        <div class="d-flex align-items-center">
+                            <div class="icon">
+                                <i class="fas fa-bell"></i>
+                                <div class="info_item notify">
+                                    <div class="notification_header">
+                                        <p>Notification</p>
+                                    <p>3</p>
+                                    </div>
+                                    <div class="notification_body">
+                                        <ul>
+                                            <li>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="image">
+                                                        <img src="https://pixinvent.com/demo/materialize-mui-react-nextjs-admin-template/demo-5/images/avatars/4.png" alt="">
+                                                    </div>
+                                                    <div class="notification_text">
+                                                        <h6>Congratulation Flora! 🎉</h6>
+                                                        <p>Won the monthly best seller badge</p>
+                                                    </div>
+                                                </div>
+                                                <div class="notification_time">
+                                                    <p>Today</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="image">
+                                                        <img src="https://pixinvent.com/demo/materialize-mui-react-nextjs-admin-template/demo-5/images/avatars/4.png" alt="">
+                                                    </div>
+                                                    <div class="notification_text">
+                                                        <h6>Congratulation Flora! 🎉</h6>
+                                                        <p>Won the monthly best seller badge</p>
+                                                    </div>
+                                                </div>
+                                                <div class="notification_time">
+                                                    <p>Today</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="image">
+                                                        <img src="https://pixinvent.com/demo/materialize-mui-react-nextjs-admin-template/demo-5/images/avatars/4.png" alt="">
+                                                    </div>
+                                                    <div class="notification_text">
+                                                        <h6>Congratulation Flora! 🎉</h6>
+                                                        <p>Won the monthly best seller badge</p>
+                                                    </div>
+                                                </div>
+                                                <div class="notification_time">
+                                                    <p>Today</p>
+                                                </div>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="menu_item">
-                                <ul class="m-0 p-0">
-                                    <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
-                                    <li><a href="#"><i class="fa fa-comment"></i> Chat</a></li>
-                                    <li><a href="#"><i class="fa fa-envelope"></i> Inbox</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu_item">
-                                <ul class="m-0 p-0">
-                                    <li><a href="#"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-2y1ax9" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="LogoutVariantIcon"><path d="M14.08,15.59L16.67,13H7V11H16.67L14.08,8.41L15.5,7L20.5,12L15.5,17L14.08,15.59M19,3A2,2 0 0,1 21,5V9.67L19,7.67V5H5V19H19V16.33L21,14.33V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5C3,3.89 3.89,3 5,3H19Z"></path></svg> Logout</a></li>
-                                </ul>
+                            <div class="icon">
+                                <img src="https://rise.fairsketch.com/files/profile_images/_file62ad94f892365-avatar.png" alt="">
+                                <div class="info_item">
+                                    <div class="profile">
+                                        <img src="https://rise.fairsketch.com/files/profile_images/_file62ad94f892365-avatar.png" alt="">
+                                        <div class="name">
+                                            <p>John Dev</p>
+                                            <p style="font-size: 10px;"><span>@johnDev</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="menu_item">
+                                        <ul class="m-0 p-0">
+                                            <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+                                            <li><a href="#"><i class="fa fa-comment"></i> Chat</a></li>
+                                            <li><a href="#"><i class="fa fa-envelope"></i> Inbox</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu_item">
+                                        <ul class="m-0 p-0">
+                                            <li><a href="#"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-2y1ax9" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="LogoutVariantIcon"><path d="M14.08,15.59L16.67,13H7V11H16.67L14.08,8.41L15.5,7L20.5,12L15.5,17L14.08,15.59M19,3A2,2 0 0,1 21,5V9.67L19,7.67V5H5V19H19V16.33L21,14.33V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5C3,3.89 3.89,3 5,3H19Z"></path></svg> Logout</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

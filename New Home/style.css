@@ -21,12 +21,12 @@ a:hover{
     left:0;
     /* width:250px; */
     width:100%;
-    height:100%;
+    height:100vh;
     background-color: #fff;
     /* padding:20px; */
     overflow-y: scroll;
 }
-.left_menu::-webkit-scrollbar {
+.left_menu::-webkit-scrollbar,.client_added::-webkit-scrollbar{
     display: none;
   }
   .left_menu {
@@ -362,12 +362,17 @@ table tbody td .action i:last-child:hover{
 }
 .client_added{
     background-color: #fff;
-    width:250px;
+    width:300px;
     height:100%;
     position: fixed;
-    right: 0;
+    right: -999px;
     top: 0;
     z-index: 9999;
+    overflow-y: scroll;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+.client_added.active{
+    right: 0;
 }
 .added_header{
     padding: 10px;
@@ -379,6 +384,26 @@ table tbody td .action i:last-child:hover{
 .added_header h4{
     font-size:20px;
     font-weight: 600;
+}
+.single_input{
+    padding:  10px;
+}
+.single_input label{
+    display: block;
+    padding-left: 5px;
+    font-size: 14px;
+    color: rgb(134 135 150);
+    margin-bottom: 4px;
+}
+.single_input input{
+    width: 100%;
+    border: 1px solid #e2e7f1;
+    border-radius: 2px;
+    padding: 5px;
+    outline: none;
+    font-weight: normal;
+    transition: all 0.5s;
+    height: 42px;
 }
 @media (max-width: 1400px){
     .responsive #image img:first-child{
