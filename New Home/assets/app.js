@@ -30,3 +30,7 @@ function toggleModal(){
     const modal = document.getElementById('modal');
     modal.classList.toggle('active');
 }
+function deleteAlert(){
+    const alert = document.getElementById('alert');
+    alert.classList.toggle('active');
+}

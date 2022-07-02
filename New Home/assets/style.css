@@ -152,9 +152,9 @@ ul li a:hover{
 .top_bar .right .icon{
     position: relative;
 }
-.top_bar .right .icon:hover .info_item{
+/* .top_bar .right .icon:hover .info_item{
     top: 31px;
-}
+} */
 .top_bar .right .icon .info_item{
     position: absolute;
     background: #fff;
@@ -162,8 +162,8 @@ ul li a:hover{
     right: 0px;
     /* padding:10px; */
     box-shadow: 0 0px 10px rgba(128, 128, 128, 0.549)!important;
-    top: -931px;
-    transition: .5s;
+    /* top: -931px; */
+    /* transition: .5s; */
 }
 .notify{
     width: 350px !important;
@@ -442,7 +442,7 @@ table tbody td .action i:last-child:hover{
 /* .modal_header:hover{
     background-color: #E6E6E6;
 } */
-.modal_header h4{
+h4{
     font-size: 20px;
     font-weight: 600;
 }
@@ -483,6 +483,41 @@ table tbody td .action i:last-child:hover{
     transition: all 0.5s;
     height: 42px;
 }
+.delete-alert{
+    display: none;
+}
+.delete-alert.active{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+
+}
+.delete-alert-content{
+    width: 300px;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.delete-alert h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+.delete-alert p{
+    font-size: 14px;
+    color: rgb(134 135 150);
+    margin-bottom: 4px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 @media (max-width: 1400px){
     .responsive #image img:first-child{
         display: none;
