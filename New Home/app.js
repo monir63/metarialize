@@ -20,3 +20,13 @@ function leftMenuToggle(){
     leftMenu.classList.toggle('active');
     checkFullContent();
 }
+
+function addClient(){
+    const client = document.getElementById('client_added');
+    client.classList.toggle('active');
+}
+
+function toggleModal(){
+    const modal = document.getElementById('modal');
+    modal.classList.toggle('active');
+}
