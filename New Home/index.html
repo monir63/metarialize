@@ -77,19 +77,19 @@
             <div class="modal_body">
                 <div class="single_input">
                     <label for="name">Name</label>
-                <input type="text" placeholder="Name">
+                <input class="form-control" type="text" placeholder="Name">
                 </div>
                 <div class="single_input">
                     <label for="">Total Invoiced</label>
-                <input type="text" placeholder="Total Invoiced">
+                <input class="form-control" type="text" placeholder="Total Invoiced">
                 </div>
                 <div class="single_input">
                     <label for="">Payment Received</label>
-                <input type="text" placeholder="Payment Received">
+                <input class="form-control" type="text" placeholder="Payment Received">
                 </div>
                 <div class="single_input">
                     <label for="">Due</label>
-                <input type="text" placeholder="Due">
+                <input class="form-control" type="text" placeholder="Due">
                 </div>
                 <div class="single_input d-flex align-items-center justify-content-between">
                     <button class="btn btn-success">Submit</button>
@@ -282,8 +282,12 @@
                             <option value="25">25</option>
                             <option value="50">50</option>
                         </select>
-                        <div class="search">
-                            <input placeholder="Search" type="text" name="" id="">
+                        <div class="btn-search-section d-flex align-items-center">
+                            <button class="me-1">Excel</button>
+                            <button>Print</button>
+                            <div class="search ms-1">
+                                <input class="form-control" placeholder="Search" type="text" name="" id="">
+                            </div>
                         </div>
                     </div>
                     <div class="table-responsive">
@@ -526,15 +530,21 @@
                                     <tr>
                                         <td colspan="9">
                                             <div class="d-flex justify-content-between">
-                                                <div class="pagination">
-                                                    <a class="disabled" href="#"><i class="fa fa-angle-left"></i></a>
-                                                    <a class="active" href="#">1</a>
-                                                    <a href="#">2</a>
-                                                    <a href="#">3</a>
-                                                    <a href="#">4</a>
-                                                    <a href="#">5</a>
-                                                    <a href="#"><i class="fa fa-angle-right"></i></a>
-                                                </div>
+                                                <nav aria-label="...">
+                                                    <ul class="pagination">
+                                                      <li class="page-item disabled">
+                                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                                      </li>
+                                                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                      <li class="page-item active" aria-current="page">
+                                                        <a class="page-link" href="#">2</a>
+                                                      </li>
+                                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                      <li class="page-item">
+                                                        <a class="page-link" href="#">Next</a>
+                                                      </li>
+                                                    </ul>
+                                                  </nav>
                                                 <div class="total me-3">
                                                     <p>Total: <span>5</span></p>
                                                 </div>

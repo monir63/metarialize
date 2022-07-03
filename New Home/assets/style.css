@@ -333,7 +333,7 @@ table tbody td .action i:last-child:hover{
 .slideItem{
     display: none;
 }
-.pagination a{
+/* .pagination a{
     background-color: #fff;
     color: #595959;
     outline: none;
@@ -344,10 +344,13 @@ table tbody td .action i:last-child:hover{
 }
 .pagination a:hover,.pagination a.active{
     background-color: #E6E6E6;
-}
+} */
 /* #leftMenu.active{
     display: block;
 } */
+.page-item:not(:first-child) .page-link {
+    margin-left: -12px;
+}
 #leftMenu{
     display: none;
 }
